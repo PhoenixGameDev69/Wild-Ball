@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject _pauseWindowPrefab;
+    [SerializeField] private GameObject _restartWindowPrefab;
 
     private Canvas _sceneCanvas;
 
@@ -15,6 +16,11 @@ public class GameManager : MonoBehaviour
     public void OnOpenPauseWindow()
     {
         Instantiate(_pauseWindowPrefab, _sceneCanvas.transform);
+    }
+
+    public void OnRestartWindow()
+    {
+        Instantiate(_restartWindowPrefab, _sceneCanvas.transform);
     }
 
     public void OnSceneLaunch(int id)

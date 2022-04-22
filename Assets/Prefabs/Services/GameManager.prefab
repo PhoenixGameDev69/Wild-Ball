@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseWindowPrefab: {fileID: 4776310860848388880, guid: e19358d140737d441a79017dce70db2f, type: 3}
+  _restartWindowPrefab: {fileID: 4776310860848388880, guid: 4b5d9a018c30d934d966df3bd8cb7ed8, type: 3}

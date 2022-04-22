@@ -16,4 +16,9 @@ public class Obstacle : MonoBehaviour
         var animationNum = Random.Range(0, _triggerNames.Length);
         _animator.SetTrigger(_triggerNames[animationNum]);
     }
+
+    public void OnDestroySelf()
+    {
+        Destroy(gameObject);
+    }
 }
